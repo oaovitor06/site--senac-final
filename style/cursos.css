@@ -1,0 +1,77 @@
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    flex-direction: column;
+}
+.cursos-lista{
+    display: flex;
+    flex-direction: column ;
+}
+.cursos-lista li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(32, 32, 32);
+
+}
+
+.cursos-item {
+    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+}
+
+.cursos-lista img {
+    width: 100%;
+}
+
+.cursos-descricao {
+    padding: 12px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background-color: var(--secondary-color);
+    width: 24px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.cursos-lista li:hover span {
+    width: 80px;
+    transition: 0.6s ease;
+}
+
+.cursos-descricao ul {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+
+}
+
+.cursos-descricao li {
+    background-color: rgb(123, 123, 124);
+    border-radius: 6px;
+    text-align: center;
+    padding: 16px 12px;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos-descricao a {
+    background-color: var(--secondary-color);
+    display: flex;
+    width: 240px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -60px;
+    bottom: 20px;
+    transform: rotate(-28deg);
+}
