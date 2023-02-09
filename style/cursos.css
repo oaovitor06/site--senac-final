@@ -75,3 +75,8 @@ span {
     bottom: 20px;
     transform: rotate(-28deg);
 }
+@media screen and (max-width:800px){
+ .cursos-item{
+    grid-template-columns:1fr;
+    }
+}
